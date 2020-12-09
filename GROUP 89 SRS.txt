@@ -1,0 +1,219 @@
+							Title:Event Management Portal
+							===============================
+Group members: 
+===============  
+		1051-Sagar Narkhede		
+		1081-Yash Sawalkar
+		
+
+
+Purpose:
+=======
+
+This document is meant to delineate the features of Event Management Portal, so as to serve as a guide to the Event Management Company and Clients on one hand. 
+The Event Management Portal for virtual shop for Clients to book a Event Management company through a web application is intended to provide complete solutions 
+for Event Managers to get a Global Market Sapce(GMS) as well as customers through a single get way using the internet.It will enable Event Managers to setup 
+online shops, customer to browse through the shop and book them online without having to visit the shop physically. The Client will get a functionality to supply 
+their budget  and the Vendor will be able to quote and bid a value, so client will get multiple quotes and bids and it would be comfortable and reliable option for 
+client to choose and for Event Management company to sell in Global Market Space.
+
+Scope:
+=====
+
+Client: To post an event and specify the requirement of the event including the budget finalized at the client's end. Also, at this end Client will be able to 
+choose the Vendor which fits into the requirement of Client without any hassle.
+Event Management Company: At this end all vendors will be able to see the posted events and will be able to bid and send quotations for the event.
+Admin: Track all the activities of the Client as well as Event Management Vendor.
+
+Definitions:
+===========
+	   EMP --> 	Event Management Portal
+	   GMS -->      Global Market Sapce
+	   Web-based application--> An application that runs on the Internet
+  	   Login --> A user identification number to enter the system
+	   MySQL a query language to interrogate the system
+	   SRS --> 	Software Requirement Specification
+	   GUI---> 	Graphical User Interface
+	   Portal-->    Personalized Website
+	   Stackholder--> The person who will participate in the System. And Onwer of system
+				Ex.  Client, Admin , Manager
+	   UML--->	Software Engineering Notation for visualising System in the form diagrams
+ 	   SSL--->	Secure Socket Layer used for providing restricted access to application
+           RDBMS -->    Relational Dadabase Management System.
+	   
+
+Overview:
+========
+Event management portal is used to manage market space to sell and hire the service offered by Event Management Company.In current situation it is difficult to find a list of Event Managing Companies on a single page and hiring them with ease with all specification is not at all a cake walk. On the other hand the new startups of companies will get a Global Market Space to sell their service. To manage all these activites and bringing all these activities on finger touches we have developed this software.
+
+Additional Information:
+======================
+	The system work on internet server, so it will  be operated by any registered clients for the event managing purpose with secure platform.
+        This system protects the integrity of the clients and service providers,and provides exciting offers.
+
+General Description:
+===================
+	The event management application helps to manage the Corporate events (seminars and conferences, trade shows etc) as well as local events such as wedding,dance show, etc.
+	The event management portal will use the internet as the sole method for managing all managers of particular events and get events successfull.
+
+Functional Requirement:
+=======================
+	This section provides requirement overview of the system. Various functional modules that can be implemented by 
+	the system will be-
+	     
+1. Registration: To enter into this site user has to register himself first.Requirements of registration are first name, last name, username, email-id, 
+		  password, confirm password etc.
+2. User Login: The System provides facility to login into the system by entering username and password end User Profile page will be shown to that user.
+					  Input:Username and password
+					  Output:User profile page.
+3. Select the Event Type:The user can select the event type
+					 Input: Event type will work as filter
+					 Output: Ease at the Vendor's page to select
+4. Forgot Password :The user can send reset link to the mail id to reset password.
+					 Input: Email id
+					 Output: Reset link send to Email id.
+5.Select an affordable proposal of events suggested in textbox.
+					 Input: Description of event with budget
+					 Output:View At Vendor's evenet of this to reply with quotation 
+
+6. Time Slots: Time slots provided for the ease of selection by Vendor's end according to his availability.
+7. Logout: The system provides the facility to logout from the site
+					 Input : Select logout option
+					 Output : Logout from the system
+					 Processing : User will logout
+
+
+
+
+Technical Issues:
+=================
+	This system will work on client-Server architecture. It will require an internet server.
+	The system should support some commonly used browser such as Chrome etc.
+	Interface Requirement Various interfaces could be 
+	1.Login Page, 
+	2.Registration form
+    
+	There will be a screen displaying information about events that the various event management companies.
+
+	The customers may select the different options which will be open in another screen as
+		1.Login Page
+		2.Registration Form
+		3.Event selection Page
+		4.Manager profile
+                5.Admin profile
+                6.Payment gateways
+                7.Account  Settings
+                8.Logout
+	
+Hardware Interface:
+===================
+	The System must run over the internet, should have windows 10 operaitng system.
+        All the hardware shall require to connect to internet will be hardware interface for the system.
+		e.g. modem,  WAN, LAN
+		Specialized Server Infrastructure Hardware
+        The system should use distrubuted servers i.e cloud for managing large amount of data so as to make it appear as single unit for end-user.
+        The system should have proper clusters for backup.
+
+Software Interface:
+===================
+	The system is on server so it requires the any scripting language like JSP or  PHP or ASP, ETC.
+        The system should be able to exchange data using XML, JASON or any advance technology.
+	The system require DataBase also for the store the any transaction of the system like MySql or oracle, or SQL server etc.
+	System also require DNS (Domain Name space) for the naming on the internet.
+	http://www.google.in
+        At the end-user need web browser for interact with the system.
+
+	Technology used: Web based Java(J2EE)
+	Web server: Apache supplied Tomcat.
+	Frontend: HTML, CSS, JAVA Script, Angular (SPA)
+	Hardware interface: windows 10
+	Database: MYSQL 
+	
+Performance Requirement:
+=======================
+	There is no  performance requirement in this system, because the server request  and respone to client is totally based on internet connection of enduser.
+			
+Design Constrains:
+==================
+	This system should be developed using  Standard Web Page Development Tool , which conforms GUI standards such like HTML, XML, JSON,etc.
+        The system should support various RDMS and Cloud Technologies.
+
+Non-Functional Requirements:
+============================
+1.Performance requirements:
+	The system need to be reliable
+	If unable to process the request then appropriate error message
+	Web pages are loaded within few seconds
+2.Safety Requirements:
+	The details need to be maintained properly
+	Users must be authenticated
+	The database must be kept backed up
+3.Security Requirements:
+	After entering the password and user id the user can access his profile
+	The details of user must be safe and secure
+	Sharing of details 
+
+4. Maintainability:
+	A commercial database is used for maintaining the databae and application server takes care of the site. 
+	The maintainability can be done efficiently.
+
+5.Portability:
+	The application is HTML and scripting language based (Javascript). So the end user part is fully portable and any system using 
+	any web browser should be able to use the features of the system,including any hardware platform that is available 
+	or will be available in the futuer. 
+	An end-user  is used this system on an OS;either it is Windows or Linux.
+	The System shall run on PC, Laptops and PDA.etc.
+	The  technology should be transferable to different environments easily.
+
+6.Accessibility:
+        Only registered users should be allowed to process the orders after authentications.
+        Only GUI access of the system should be permited to end users.
+
+7.Policies:
+       The system should adhere to all the legal formalities of the particular countries.
+       The system should maintain security related to sensitive data.
+
+8.Efficiency:
+	The system should provide good throughput and response to multiple users without burdening the system by using appropriate number of servers.
+
+9.Safety:
+      Software should not harm ethical and environmental conditions of the end users machine.
+
+10.Modulariy:
+      The system should have user friendly interface. 
+      It should be easily updated,modified and reused. 
+
+Operational Scenario:
+=====================
+	Operation of the proposed system depend on its various users.
+	These various user-type mentioned below:
+
+		(1)Admin
+		(2)Manager
+		(3)Normal User (Participants)/Volunteer
+
+	Admin will monitor all the activitis of the Event Management Companies and Clients. Admn can take actions accordingly if he finds some corrupt actions with respect to client and Vendors. 
+	Then manager will check user supplied specifications and will reply with the budget quotation, the manager will suggest the list of different packages for an event available.
+	Manager can also filter date, time of the events to his dashboard. 
+	Here manager is responsible to restrict unauthorized people or wrong entries.
+	After these all process Admin can check all detais of clients, work of manager. Admin can make any changes at any stage.
+
+Pre-Scheduling:
+===============
+	Requirement Analysis
+		• Analysis
+		• Gathering Information
+		• Determining Requirements
+		• Defining scope
+	Design
+		• Database Design
+		• Design Modules 
+		• Design Input Screen(Login page etc.)
+	Implementation
+		• Development of Module
+		
+
+
+
+
+
